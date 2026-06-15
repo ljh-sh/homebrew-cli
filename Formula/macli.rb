@@ -15,6 +15,8 @@ class Macli < Formula
   # No dependencies — macli links only system frameworks.
   def install
     # Tarball internal layout: bin/macli
+    # Use Dir.glob to avoid Pathname-relative resolution issues
+    File.exist?("bin/macli") || odie "Expected bin/macli in tarball, found: #{Dir.children(Dir.pwd).inspect}"
     bin.install "bin/macli"
   end
 
