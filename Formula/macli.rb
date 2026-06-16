@@ -10,7 +10,7 @@ class Macli < Formula
   url "https://github.com/ljh-sh/macli/releases/download/v0.0.0/macli-darwin-universal.tar.xz"
   version "0.0.0"
   sha256 "1161d2f373d24163fb4318c4d474cc4d286ba07a5416252aa45d642e7c1e4ba0"
-  license "MIT"
+  license "Apache-2.0"
 
   def install
     # Tarball internal layout: bin/macli
