@@ -23,8 +23,9 @@ class Macli < Formula
     # macli ships with ad-hoc signature (not Apple Developer ID).
     # Remove quarantine attr so Gatekeeper doesn't prompt on first run.
     target = "#{HOMEBREW_PREFIX}/bin/macli"
-    system_command "xattr", args:         ["-dr", "com.apple.quarantine", target],
-                            must_succeed: false
+    system "xattr", "-dr", "com.apple.quarantine", target
+  rescue BuildError
+    # The attribute may not exist or may be protected; ignore the failure.
   end
 
   test do
