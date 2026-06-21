@@ -7,7 +7,7 @@
 class Maclisten < Formula
   desc "Private, lightweight macOS ASR CLI"
   homepage "https://github.com/ljh-sh/maclisten"
-  url "https://github.com/ljh-sh/maclisten/releases/download/v0.2.1/maclisten-darwin-universal.tar.xz"
+  url "https://github.com/ljh-sh/maclisten/releases/download/v0.2.2/maclisten-darwin-universal.tar.xz"
   sha256 "22af0d8758fcbd5e4a1e4bb15463401f51d547c6ab246bc0134f0e297fc63c5b"
   license "Apache-2.0"
 
